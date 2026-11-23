@@ -4,11 +4,6 @@ A command-line tool that scans code for hardcoded API keys, tokens, and credenti
 
 Matched secrets are always **redacted** in the output (`AKIA****************`), so the report never becomes a second leak.
 
-# Steps to Run
-On macOS, `python3 -m secret_scanner` runs the project. The target rust file should exist just outside the secret_scanner directory as long as they're existing within the same folder 
-### *Example*
-`"Secret Scanner"/secret_scanner` and `"Secret Scanner"/vulnerable_sample.rs`.
-
 > **Status: work in progress (v0.1.0).** The scanning pipeline (rules, entropy analysis, redaction, text/JSON reports) is written, but the project does not run straight from a fresh clone yet. See [Running it](#running-it) and [Known issues](#known-issues).
 
 ## What it detects
